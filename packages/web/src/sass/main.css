@@ -1,0 +1,1130 @@
+.currency-container {
+  width: 10%;
+  height: 100%;
+}
+.currency-container .currency-selected {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 5vw;
+  height: 5vh;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.currency-container .currency-selected img {
+  width: 1.5vw;
+  height: 3vh;
+}
+.currency-container .currency-selected label {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.currency-container .currency-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  width: 520px;
+  height: 341px;
+  position: absolute;
+  align-items: center;
+  right: 33vw;
+  top: 10vh;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.currency-container .currency-selector .currency-titlebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+}
+.currency-container .currency-selector .currency-titlebar label {
+  position: absolute;
+  width: 146px;
+  height: 18px;
+  top: 28px;
+  left: 38px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.currency-container .currency-selector .currency-titlebar button {
+  width: 19px;
+  height: 19px;
+  top: 15px;
+  left: 488px;
+  padding: 3.96px 3.96px 3.96px 3.96px;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: absolute;
+}
+.currency-container .currency-selector .currency-titlebar button img {
+  width: 100%;
+  height: 100%;
+}
+.currency-container .currency-selector .currency-searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 459px;
+  height: 46px;
+  border-radius: 50px;
+  align-items: center;
+  background-color: #F1F5F9;
+}
+.currency-container .currency-selector .currency-searchbar svg {
+  position: absolute;
+  width: 12.03px;
+  height: 12px;
+  top: 70px;
+  left: 58.05px;
+  padding: 1px 1.51px 1.5px 1.01px;
+  color: rgba(181, 178, 178, 0.6588235294);
+}
+.currency-container .currency-selector .currency-searchbar input {
+  width: 400px;
+  position: absolute;
+  height: 42px;
+  top: 55px;
+  left: 30px;
+  padding-left: 55px;
+  border-radius: 50px;
+  border: 0.5px solid transparent;
+  background: transparent;
+  color: rgba(181, 178, 178, 0.6588235294);
+}
+.currency-container .currency-selector .currency-list {
+  width: 35vw;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector label {
+  position: absolute;
+  width: 114px;
+  height: 18px;
+  top: 128px;
+  left: 64px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(181, 178, 178, 0.6588235294);
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies {
+  position: relative;
+  top: 35px;
+  cursor: pointer;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 216px;
+  height: 56px;
+  top: 15px;
+  left: 38px;
+  border-radius: 50px;
+  align-items: center;
+  background: #F1F5F9;
+  position: absolute;
+  align-items: center;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  padding: 1.0625px;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li .popular-currency {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10vw;
+  height: 100%;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li .popular-currency label {
+  position: unset;
+  width: 200px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0%;
+  color: black;
+  cursor: pointer;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li .popular-currency small {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  width: 46px;
+  height: 18px;
+  top: 184px;
+  left: 89px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #757575;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li small {
+  width: 12px;
+  height: 12px;
+  padding: 0.5px;
+}
+.currency-container .currency-selector .currency-list .popular-currency-selector .popular-currencies ul li small img {
+  width: 100%;
+  height: 100%;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector label {
+  position: absolute;
+  width: 114px;
+  height: 18px;
+  top: 225px;
+  left: 64px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(181, 178, 178, 0.6588235294);
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies {
+  position: relative;
+  top: 140px;
+  cursor: pointer;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 15vw;
+  height: 8vh;
+  align-items: center;
+  cursor: pointer;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li img {
+  width: 1.5vw;
+  height: 3vh;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li .other-currency {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10vw;
+  height: 100%;
+  align-items: flex-start;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li .other-currency label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0%;
+  color: black;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li .other-currency small {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  font-size: 0.7rem;
+  width: 5vw;
+  height: unset;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li small {
+  width: 1vw;
+  height: 2vh;
+}
+.currency-container .currency-selector .currency-list .other-currency-selector .other-currencies ul li small img {
+  width: 100%;
+  height: 100%;
+}
+
+.login-container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f5f9;
+  border-radius: 20px;
+}
+.login-container-main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 35vh;
+  align-items: center;
+}
+.login-container-main form .userId input {
+  border: 5px solid rgb(181, 181, 196);
+}
+.login-container-main form .userIdInvalid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+}
+.login-container-main form .userIdInvalid svg {
+  width: 1.5vw !important;
+  height: 4vh !important;
+  color: #ff6b6b !important;
+  background-color: transparent !important;
+}
+.login-container-main form .userIdInvalid input {
+  background: transparent;
+  width: 75%;
+  border: transparent;
+  height: 5vh;
+}
+.login-container-main form .password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+}
+.login-container-main form .password svg {
+  width: 1.5vw !important;
+  height: 4vh !important;
+  color: #ff6b6b !important;
+  background-color: transparent !important;
+}
+.login-container-main form .password input {
+  background: transparent;
+  width: 75%;
+  border: transparent;
+  height: 5vh;
+}
+.login-container-main form .password input ::after {
+  border: red;
+}
+.login-container-main form a {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.login-container-main form button {
+  width: 18vw;
+  height: 6vh;
+  border-radius: 30px;
+  border: transparent;
+  background-color: #ff6b6b;
+  cursor: pointer;
+}
+.login-container-main label {
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  margin: 0 0 0 2vw;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.login-container-main small {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.login-container-main .signin-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 5vh;
+  width: 100%;
+}
+.login-container-main .signin-links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+}
+.login-container-main .signin-links a img {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-around;
+  width: 2vw !important;
+  height: 4vh !important;
+  padding-left: 0 !important;
+}
+
+.homepage-main {
+  width: 100vw;
+}
+.homepage-main .homepage-frames {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.homepage-main .homepage-frames iframe {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+}
+.homepage-main .homepage-navigation {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  margin: 0;
+  top: 65vh;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.0392156863);
+}
+.homepage-main .homepage-navigation .homepage-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .navbar-tabs {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .navbar-tabs svg {
+  width: 30%;
+  font-size: 35px;
+  cursor: pointer;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 58%;
+  height: 100%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  width: 90%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 90%;
+  height: 35%;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar ul li {
+  cursor: pointer;
+  margin: 0 20px 0 20px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar ul ::marker {
+  font-size: 0px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab {
+  height: 48%;
+  width: 95%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 35px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input button {
+  width: 4vw;
+  height: 8vh;
+  border: 1px solid transparent;
+  border-radius: 239px;
+  background-color: #ff6b6b;
+  color: #fff;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input button svg {
+  font-size: 1.3rem;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+  height: 80%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input svg {
+  width: 9%;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .location-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  height: 70%;
+  border-right: 2px solid #d3cdcd;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .location-selector label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  height: 45%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .location-selector input {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(181, 178, 178, 0.6588235294);
+  height: 45%;
+  border: 1px solid rgba(205, 193, 193, 0.0196078431);
+  border-radius: 5px;
+  padding-left: 0px;
+  width: 95%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .dropdown-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  position: absolute;
+  width: 20%;
+  height: 40vh;
+  overflow: hidden;
+  margin-bottom: 45vh;
+  background-color: transparent;
+  margin-left: 7vh;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .autosuggest-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .autosuggest-dropdown .autosuugest-location {
+  overflow: hidden scroll;
+  width: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .autosuggest-dropdown .autosuugest-location .autosuggest-individual {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
+  width: 100%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .autosuggest-dropdown .autosuugest-location .autosuggest-individual .location-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  width: 10%;
+  height: 100%;
+  background-color: rgba(181, 178, 178, 0.6588235294);
+  border-radius: 15px;
+  align-items: center;
+  margin-right: 10px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .autosuggest-dropdown .autosuugest-location .autosuggest-individual .location-icon svg {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-between;
+  width: 35%;
+  align-items: center;
+  height: 4vh;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .location-input .autosuggest-dropdown .autosuugest-location .autosuggest-individual .cityname {
+  width: 80%;
+  font-size: 0.8rem;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 33%;
+  height: 80%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker svg {
+  width: 8%;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  height: 70%;
+  border-right: 2px solid #d3cdcd;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  height: 45%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector span {
+  height: 45%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(181, 178, 178, 0.6588235294);
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element {
+  width: 100%;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker span {
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: gray;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  position: absolute;
+  width: 25vw;
+  height: 40vh;
+  bottom: 25vh;
+  left: 42vw;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrCalendarWrapper.rdrDateRangeWrapper {
+  position: absolute;
+  font-size: unset;
+  bottom: 0vh;
+  width: 25vw;
+  height: 40vh;
+  background: transparent;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDateDisplayWrapper {
+  height: 6vh;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDateDisplayWrapper .rdrDateDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2px 0 2px;
+  width: 99%;
+  height: 100%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDateDisplayWrapper .rdrDateDisplay span {
+  width: 50%;
+  height: 60%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrCalendarWrapper.rdrDateRangeWrapper .rdrDateDisplayWrapper .rdrDateDisplay span input {
+  height: unset;
+  line-height: unset;
+  font-size: xx-small;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonthAndYearWrapper {
+  align-items: center;
+  height: 15%;
+  flex-direction: row;
+  padding-top: 0px;
+  background-color: #fff;
+  color: #ff6b6b;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonthAndYearWrapper button {
+  background-color: transparent;
+  border: unset;
+  border-radius: unset;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonthAndYearWrapper .rdrMonthPicker {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonthAndYearWrapper .rdrMonthPicker select {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #ff6b6b;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonthAndYearWrapper .rdrMonthPicker select :hover {
+  background: transparent;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonthAndYearWrapper .rdrYearPicker {
+  display: none;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  height: 40vh;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth {
+  padding: 0;
+  width: 21.667em;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrMonthName {
+  display: none;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrWeekDays {
+  height: 15%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  grid-gap: 3px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button {
+  width: 3vw;
+  height: 3.5vh;
+  background-color: transparent;
+  border-radius: unset;
+  border: unset;
+  line-height: 25px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button .rdrDayNumber {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.7rem;
+  top: 0;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button .rdrDayNumber span {
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button .rdrDayNumber span :after {
+  bottom: 5px;
+  height: 2px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button .rdrStartEdge {
+  height: 100%;
+  border-top-left-radius: 1.042em;
+  border-bottom-left-radius: 1.042em;
+  left: 5px;
+  top: 0px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button .rdrInRange {
+  height: 100%;
+  width: 110%;
+  top: 0px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .datepicker-picker .date-selector .daterange-picker-element .daterange-picker .date-ranges .rdrMonths.rdrMonthsHorizontal .rdrMonth .rdrDays button .rdrEndEdge {
+  height: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18%;
+  height: 80%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type svg {
+  width: 11%;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .passenger-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 70%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .passenger-selector label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  height: 45%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .passenger-selector span {
+  height: 45%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(181, 178, 178, 0.6588235294);
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector {
+  width: 18vw;
+  position: absolute;
+  background-color: #fff;
+  bottom: 25vh;
+  border: transparent;
+  border-radius: 15px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker span {
+  display: flex;
+  flex-direction: unset;
+  justify-content: unset;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+  padding-left: 1vw;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 8vh;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .adult-guest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .adult-guest span {
+  font-size: 0.7rem;
+  padding: 0;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .adult-guest .adult-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  background-color: #dddde3;
+  border-radius: 30px 30px 30px 30px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .adult-guest .adult-selector span {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  width: 60%;
+  align-items: center;
+  padding: 0;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .adult-guest .adult-selector button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: transparent;
+  border-radius: 50%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .child-guest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 100%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .child-guest span {
+  font-size: 0.7rem;
+  padding: 0;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .child-guest .child-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  background-color: #dddde3;
+  border-radius: 30px 30px 30px 30px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .child-guest .child-selector span {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  width: 60%;
+  align-items: center;
+  padding: 0;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guest-type .child-guest .child-selector button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: transparent;
+  border-radius: 50%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .childage-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .childage-count span {
+  width: 25%;
+  height: 100%;
+  font-size: 0.7rem;
+  padding: 0;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .childage-count label {
+  font-size: 0.7rem;
+  color: #b3acac;
+  width: 20%;
+  letter-spacing: 1px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .childage-count .child-age {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 7vw;
+  height: 4vh;
+  align-items: center;
+  background-color: #dddde3;
+  border-radius: 15px 15px 15px 15px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .childage-count .child-age span {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  width: 60%;
+  font-size: 0.7rem;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .childage-count .child-age button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: transparent;
+  border-radius: 50%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guestform-submission {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .search-bar .searchbar-tab .search-form-input .passenger-type .guest-selector .guest-picker .guestform-submission button {
+  width: 55%;
+  height: 55%;
+  border: transparent;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .footer-homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+  color: #fff;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .footer-homepage span {
+  display: flex;
+  flex-direction: unset;
+  justify-content: flex-end;
+  width: 25%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .footer-homepage ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .footer-homepage ul ::marker {
+  font-size: 10px;
+}
+.homepage-main .homepage-navigation .homepage-container .input-container .footer-homepage ul li a {
+  color: #fff;
+}
+.homepage-main .homepage-navigation .homepage-container .support {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  width: 20%;
+  align-items: center;
+}
+.homepage-main .homepage-navigation .homepage-container .support button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  width: 10vw;
+  height: 6vh;
+  align-items: center;
+  background-color: #ff6b6b;
+  color: #fff;
+}
+.homepage-main .homepage-navigation .homepage-container .support button svg {
+  font-size: 20px;
+}
+
+.menu {
+  position: absolute;
+  width: 100vw;
+  height: 20vh;
+  background-color: transparent;
+}
+.menu .menu-container {
+  width: 100%;
+  height: 90%;
+  padding-top: 10px;
+}
+.menu .menu-container .menu-row {
+  width: 100%;
+  height: 100%;
+}
+.menu .menu-container .menu-row .currancy-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 5vh;
+  position: relative;
+  align-items: center;
+  background-color: transparent;
+}
+.menu .menu-container .menu-row .logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 15vh;
+  padding-top: 10px;
+}
+.menu .menu-container .menu-row .logo-wrapper img {
+  width: 11vw;
+  height: 7vh;
+  padding-left: 10vw;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 15vw;
+  align-items: center;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container .login-icon {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: unset;
+  justify-content: unset;
+  cursor: pointer;
+  transition: max-height 500px 0.5s ease-in-out;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container .login-icon img {
+  height: 35px;
+  width: 35px;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container .login-icon button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 8vw;
+  height: 5vh;
+  align-items: center;
+  background-color: #fff;
+  border: transparent;
+  border-radius: 30px;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container .login-icon button img {
+  width: 1.5vw;
+  height: 3vh;
+  padding-left: 0;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container .login-icon button small {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.menu .menu-container .menu-row .logo-wrapper .login-container .login-page {
+  width: 20vw;
+  height: 50vh;
+  position: absolute;
+  top: 15vh;
+  right: 8vw;
+}/*# sourceMappingURL=main.css.map */

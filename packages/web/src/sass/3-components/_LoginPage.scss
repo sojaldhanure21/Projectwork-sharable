@@ -1,0 +1,120 @@
+.login-container-main {
+    @include flexbox(flex, column, space-around);
+    width: 100%;
+    height: 100%;
+    background-color: #f1f5f9;
+    border-radius: 20px;
+
+    form {
+        @include flexbox(flex, column, space-between);
+        width: 100%;
+        height: 35vh;
+        align-items: center;
+
+        .userId {
+            input {
+                border: 5px solid rgb(181, 181, 196);
+            }
+        }
+
+        .userIdInvalid {
+            @include flexbox(flex, row, space-around);
+            width: 90%;
+            align-items: center;
+            background: $coomonWhiteColor;
+            border-radius: 30px;
+
+            svg {
+                width: 1.5vw !important;
+                height: 4vh !important;
+                color: $logoThemeColoredIcons !important;
+                background-color: $transparentColor !important;
+            }
+
+            input {
+                background: $transparentColor;
+                width: 75%;
+                border: $transparentColor;
+                height:  5vh;
+            }
+        }
+
+        .password {
+            @include flexbox(flex, row, space-around);
+            width: 90%;
+            align-items: center;
+            background: $coomonWhiteColor;
+            border-radius: 30px;
+
+            svg {
+                width: 1.5vw !important;
+                height: 4vh !important;
+                color: $logoThemeColoredIcons !important;
+                background-color: $transparentColor !important;
+            }
+
+            input {
+                background: $transparentColor;
+                width: 75%;
+                border: $transparentColor;
+                height:  5vh;
+
+                ::after{
+                    border: red;
+                }
+            }
+        }
+
+        a {
+            color: $logoThemeColoredIcons;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+
+        button {
+            width: 18vw;
+            height: 6vh;
+            border-radius: 30px;
+            border: $transparentColor;
+            background-color: $logoThemeColoredIcons;
+            cursor: pointer;
+        }
+    }
+
+    label {
+        width: 100%;
+        height: 5vh;
+        align-items: center;
+        margin: 0 0 0 2vw;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    small{
+        @include flexbox(flex,unset,center);
+        align-items:center;
+        font-size: 0.8rem;
+        font-weight: 500
+
+    }
+
+    .signin-links {
+        @include flexbox(flex, row, space-around);
+        height: 5vh;
+        width: 100%;
+
+        a {
+            @include flexbox(flex, row, space-around);
+            width: 20%;
+            height: 100%;
+
+            img {
+                @include flexbox(flex, unset, space-around);
+                width: 2vw !important;
+                height: 4vh !important;
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
